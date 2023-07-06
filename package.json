@@ -1,0 +1,44 @@
+{
+  "name": "unocss-preset-brand",
+  "version": "1.0.0",
+  "description": "The brand preset for Unocss",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "types": "./dist/index.d.ts",
+  "homepage": "https://github.com/emojiiii/unocss-preset-brand/blob/main/README.md",
+  "bugs": {
+    "url": "https://github.com/emojiiii/unocss-preset-brand/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/emojiiii/unocss-preset-brand",
+    "directory": "src"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "unbuild && pnpm build:types",
+    "build:types": "tsc",
+    "stub": "unbuild --stub"
+  },
+  "keywords": [
+    "unocss",
+    "unocss-preset",
+    "unocss-preset-brand"
+  ],
+  "author": "emojiiii",
+  "license": "MIT",
+  "devDependencies": {
+    "@ctrl/tinycolor": "^3.6.0",
+    "@unocss/core": "^0.53.4",
+    "@unocss/preset-uno": "^0.53.4",
+    "typescript": "^5.1.6",
+    "unbuild": "^1.2.1"
+  }
+}
